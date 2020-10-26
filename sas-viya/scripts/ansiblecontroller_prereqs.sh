@@ -23,7 +23,7 @@ if ! type -p ansible;  then
    # install Ansible
     curl --retry 10 --max-time 60 --fail --silent --show-error "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     sudo python get-pip.py
-    pip install 'ansible==2.8.0'
+    pip install 'ansible==2.10'
 fi
 yum install -y yum-utils
 yum install -y java-1.8.0-openjdk
